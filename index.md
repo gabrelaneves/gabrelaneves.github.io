@@ -13,16 +13,16 @@ Proficiency in designing new systems and architectures, particularly those focus
 Currently serving as the software engineer responsible for all internal services and the company's backend website. The company's operations rely on multiple microservices that together form a large ecosystem. Key contributions across these services include:
 
 - Co-designed and developed the core internal system for an asset portfolio management platform, recording financial events such as trades, transfers, and allocations. Order entries in the system trigger other subscribed services. The choice of event-driven architecture was driven by the need for immutable records and the requirement to track the state of orders at specific points in history. The system was built using Eventuous, a framework for event-sourced applications that facilitates communication with other services through a Command API.
+
+- Responsible for the maintenance of a market data system, an application for ingestion and availability of data (price, volume, etc.) in real-time for assets and indices. Data ingestion is done by Kinesis Data Stream ingesting data from third-party WebSockets. The data is processed by an EC2 instance and stored in a Redis cache for low-latency.
   
 - Contributed to the development of the company's HR system, where the UI was built using Quasar/VueJS. The CMS was developed with the Strapi Framework. The system implemented a hierarchical tree logic, ensuring that users only had visibility of individuals subordinate to them or connected within their team and position. System security is based on multiple factors such as internal network (VPN), OAuth authentication (Cognito), and MFAs.
 
-- Developed numerous automated routines that drastically reduced analysts' workloads, orchestrating them through AWS Step Functions and AWS Lambda. Each routine is encapsulated as a Docker image stored on ECR, necessitated by Lambda's storage limitations.
+- Developed numerous automated routines that drastically reduced analysts workloads, orchestrating them through AWS Step Functions, Eventbridge and Lambda. Each routine is encapsulated as a Docker image stored on ECR, necessitated by Lambda's dependencies storage limitations.
 
 - Created automated bots across various platforms (Telegram, WhatsApp, and Slack) for diverse purposes including trading auctions (OTC), company material dissemination, and internal monitoring alerts.
 
 - Responsible for maintaining and implementing new integrations for the company's trading system, which involves connecting to the REST APIs of various exchanges. This allows the trading team to monitor product balance sheets and execute bulk order placements efficiently. Ensures that sensitive information is securely stored and managed using Secrets Manager.
-
-- Responsible for the maintenance of Marketdata, an application for ingestion and availability of data (price, volume, etc.) in real-time for assets and indices. Data ingestion is done by Kubernetes pods (AWS EKS) ingesting data from third-party WebSockets and pushing the data into AWS Kinesis and Firehose. The data is processed and stored in AWS Timestream and Redis for low-latency queries.
 
 - **Stack:**  Python, C#, Vue, NodeJS, Javacript, Github Actions, EventStoreDB, MongoDB, Serveless Framework, Docker, AWS.
   
