@@ -8,7 +8,8 @@ Proficiency in designing new systems and architectures, particularly those focus
 # Work Experience
 
 ## Software Engineer Expert at Pixida
-**Aug 2024 - Present**
+**Aug 2024 - Present**  
+**Location:** Remote (connected to Munich)  
 
 As a software engineer expert at Pixida, I architect and develop systems for the BMW Group QA team, focusing on assessing the quality of the maps provided to the vehicles. My responsibilities span end-to-end solution development on AWS infrastructure, covering backend, frontend, data engineering, and DevOps. Key responsibilities include:
 
@@ -18,8 +19,9 @@ As a software engineer expert at Pixida, I architect and develop systems for the
 
 **Stack:** AWS, Python, Node.js, React, Github Actions, Serverless Framework, ECS, Docker, EMR, Geoserver, PostgreSQL.
 
-## Software Engineer at Hashdex
-**Apr 2022 - Aug 2024**
+## Software Engineer at Hashdex  
+**Apr 2022 - Aug 2024**  
+**Location:** Remote (connected to Rio de Janeiro) 
 
 As the primary software engineer for internal services and backend infrastructure, I developed a microservices ecosystem critical to Hashdex's operations, specializing in managing crypto assets. My role spanned architecture, development, and maintenance of systems supporting key business functions. Key projects included:
 
