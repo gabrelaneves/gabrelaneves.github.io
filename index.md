@@ -7,27 +7,38 @@ Proficiency in designing new systems and architectures, particularly those focus
 
 # Work Experience
 
+## Software Engineer Expert at Pixida
+**Aug 2024 - Present**
+
+As a software engineer expert at Pixida, I architect and develop systems for the BMW Group QA team, focusing on assessing the quality of the maps provided to the vehicles. My responsibilities span end-to-end solution development on AWS infrastructure, covering backend, frontend, data engineering, and DevOps. Key responsibilities include:
+
+- Architecting systems that process and analyze vast geospatial datasets to provide insights on maps quality.
+- Developing backend services in Python and Node.js, while implementing intuitive and responsive frontends in React.
+- Managing data ingestion pipelines, data integration, and processing workflows for geospatial data.
+
+**Stack:** AWS, Python, Node.js, React, Github Actions, Serverless Framework, ECS, Docker, EMR, Geoserver, PostgreSQL.
+
 ## Software Engineer at Hashdex
-**2022 - Present**
+**Apr 2022 - Aug 2024**
 
-Currently serving as the software engineer responsible for all internal services and the company's backend website. The company's operations rely on multiple microservices that together form a large ecosystem. Key contributions across these services include:
+As the primary software engineer for internal services and backend infrastructure, I developed a microservices ecosystem critical to Hashdex's operations, specializing in managing crypto assets. My role spanned architecture, development, and maintenance of systems supporting key business functions. Key projects included:
 
-- Co-designed and developed the core internal system for an asset portfolio management platform, recording financial events such as trades, transfers, and allocations. Order entries in the system trigger other subscribed services. The choice of event-driven architecture was driven by the need for immutable records and the requirement to track the state of orders at specific points in history. The system was built using Eventuous, a framework for event-sourced applications that facilitates communication with other services through a Command API.
+- **Asset Portfolio Management Platform**: Co-designed and developed a core internal system to manage asset portfolios, tracking financial events like trades, transfers, and allocations. Using an event-driven architecture, this platform leverages Eventuous to support historical tracking and immutable record-keeping, with a Command API for seamless service communication.
 
-- Responsible for the maintenance of a market data system, an application for ingestion and availability of data (price, volume, etc.) in real-time for assets and indices. Data ingestion is done by Kinesis Data Stream ingesting data from third-party WebSockets. The data is processed by an EC2 instance and stored in a Redis cache for low-latency.
-  
-- Contributed to the development of the company's HR system, where the UI was built using Quasar/VueJS. The CMS was developed with the Strapi Framework. The system implemented a hierarchical tree logic, ensuring that users only had visibility of individuals subordinate to them or connected within their team and position. System security is based on multiple factors such as internal network (VPN), OAuth authentication (Cognito), and MFAs.
+- **HR Management System**: Developed an HR platform with a VueJS-based UI (using Quasar) and Strapi for CMS functionalities. Designed hierarchical access controls ensuring visibility based on team and position, secured with VPN access, OAuth (Cognito), and multi-factor authentication (MFA).
 
-- Developed numerous automated routines that drastically reduced analysts workloads, orchestrating them through AWS Step Functions, Eventbridge and Lambda. Each routine is encapsulated as a Docker image stored on ECR, necessitated by Lambda's dependencies storage limitations.
+- **Automated Workflow Routines**: Built automated workflows using AWS Step Functions and Lambda, significantly reducing manual workloads. Each workflow is encapsulated within Docker images stored in ECR to overcome Lambda storage constraints.
 
-- Created automated bots across various platforms (Telegram, WhatsApp, and Slack) for diverse purposes including trading auctions (OTC), company material dissemination, and internal monitoring alerts.
+- **Trading Bots and Notifications**: Developed bots for platforms like Telegram, WhatsApp, and Slack to streamline OTC trading auctions, content dissemination, and internal alerts.
 
-- Responsible for maintaining and implementing new integrations for the company's trading system, which involves connecting to the REST APIs of various exchanges. This allows the trading team to monitor product balance sheets and execute bulk order placements efficiently. Ensures that sensitive information is securely stored and managed using Secrets Manager.
+- **Trading System Integrations**: Maintained and implemented new trading system integrations, enabling efficient bulk order placements and balance monitoring across exchange REST APIs. Utilized AWS Secrets Manager for secure storage of sensitive information.
 
-- **Stack:**  Python, C#, Vue, NodeJS, Javacript, Github Actions, EventStoreDB, MongoDB, Serveless Framework, Docker, AWS.
+- **Market Data System**: Maintained Marketdata, a real-time data ingestion and availability application for asset prices and volumes. Leveraged AWS EKS pods for data ingestion via third-party WebSockets, processed via Kinesis and Firehose, and stored in AWS Timestream and Redis for low-latency querying.
+
+**Stack:**  Python, C#, Vue, NodeJS, Javacript, Github Actions, EventStoreDB, MongoDB, Serveless Framework, Docker, AWS.
   
 ## Developer Intern at Santander Brasil
-**2021 - 2022 (1 year)**
+**2021 - 2022**
 
 Worked within the internal audit department of the bank, automating routines, data processing, and analysis using primarily the pandas and numpy libraries. The main project during this period was automating the generation of the annual audit report, a document that previously took about one month to produce but was reduced to just a few seconds through automation.
   - **Stack:** Python, SQL, VBA
@@ -45,4 +56,5 @@ Worked within the internal audit department of the bank, automating routines, da
 
 # Languages
 - **English:** Fluent
+- **Spanish:** Professional working proficiency
 - **Portuguese:** Native
